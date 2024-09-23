@@ -50,7 +50,7 @@ def data_folder(dataFolder):
     
     # TODO: Move the following options in a pop up window for the user to select from several options
     # Files and analysis type
-    analysis_params['time_series_stack'] = f"{meta_data_dict['TSeries_ID'][0]}_Ch2_reg.tif"# f"{analysis_params['current_t_series']}_Ch2_reg.tif" # Name of your motion-aligned tif stack.
+    analysis_params['time_series_stack'] = f"{meta_data_dict['TSeries_ID'][0]}_Ch2_reg.tif" # f"{analysis_params['current_t_series']}_Ch2_reg.tif" # Name of your motion-aligned tif stack.
     analysis_params['deltaF_method'] = 'mean' # 'mean'
     analysis_params['df_first'] = True # If df_f should be done BEFORE trial averaging. False option has bugs
     analysis_params['int_rate'] = 10 # Rate to interpolate the data
@@ -75,8 +75,8 @@ def data_folder(dataFolder):
     return analysis_params, dataFolder, save_data 
 
 #For debugging
-analysis_params, dataFolder, save_data  = data_folder(r'D:\Two-Photon-Data-Ultima')
-main_2p_imaging_analysis(analysis_params, dataFolder, save_data)
+#analysis_params, dataFolder, save_data  = data_folder(r'E:\Two-Photon-Data-Ultima')
+#main_2p_imaging_analysis(analysis_params, dataFolder, save_data)
 
 #%% Running code from terminal (typing: "python run_2p_analysis.py data_folder D:\Two-Photon-Data-Ultima")
 if __name__ == "__main__":
